@@ -18,12 +18,6 @@ struct ContentView: View {
     @State private var mayhew = 0.00
     @State private var average = 0.00
     @State private var showingAlert = false
-    var epley1 = 0.9
-    static let taskNumberFormat: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .scientific
-        return formatter
-    }()
     
     var body: some View {
         VStack {
@@ -43,7 +37,7 @@ struct ContentView: View {
             .padding(.bottom)
             
             VStack (alignment: .leading, spacing: 10){
-                //Text(String(format: "%.2f", epley))
+                Text("Epley \(epley)")
                 Text("Brzycki \(brzycki)")
                 Text("McGlothin \(mcglothin)")
                 Text("Lombardi \(lombardi)")
